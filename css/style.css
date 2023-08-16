@@ -1,0 +1,81 @@
+@charset 'utf-8';
+* {	/*initialization*/
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;	/*not to ruin the layout*/
+}
+ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none; /*remove link decoration*/
+}
+
+/*header*/
+header{
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+}
+header.inner{
+	width: 1180px;
+	height: 120px;
+	margin: 0px auto;
+	position: relative;		/*setting reference point for child absolute*/
+}
+header .inner h1{
+	position: absolute;		/*preventing change in HTML contents by float*/
+	left: 0px;
+	bottom: 15px;
+}
+header .inner h1 a{
+	font: bold 24px/1 "arial";
+	color: #444444;
+}
+header .inner .util{
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+header .inner .util li{
+	float: left;
+}
+header .inner .util li a{
+	display: block;
+	font: 12px/1 "arial";
+	color: #999999;
+	padding: 0px 10px;
+}
+header .inner #gnb{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+header .inner #gnb li{
+	float: left;
+}
+header .inner #gnb li a{
+	display: block;
+	font: bold 15px/1 "arial";
+	color: #555555;
+	padding: 20px 40px;
+	transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
